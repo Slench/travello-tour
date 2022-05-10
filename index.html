@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travello</title>
+    <link rel="shortcut icon" href="img/mini-logo.png" type="image/x-icon"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">             
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+           <section class="parallax">
+               <div class="parallax__body">
+                    <div class="header__container container">
+                        <div class="header__header">
+                            <div class="header__logo">
+                                <a href=""><img src="img/logo.png" alt=""></a>
+                            </div>                 
+                            <nav class="header__nav">
+                                <ul class="menu header__menu">
+                                    <li><a href="" class="menu__item">Home</a></li>
+                                    <li><a href="" class="menu__item">About us</a></li>
+                                    <li><a href="" class="menu__item">Populer Destination</a></li>
+                                    <li><a href="" class="menu__item">Tour Packege</a></li>
+                                    <li><a href="" class="menu__item">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="menu-burger__header">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="header__body">
+                            <div class="header__title">
+                                Explore The Great Place
+                            </div>
+                        </div>
+                    </div>
+                    <div class="parallax__images">
+                        <div class="images-parallax__item">
+                            <div class="images-parallax__sky"></div>
+                        </div>
+                        <div class="images-parallax__item">
+                            <div class="images-parallax__mountains"></div>
+                        </div>
+                        <div class="images-parallax__item">
+                            <div class="images-parallax__human"></div>
+                        </div>
+                    </div>
+               </div>
+           </section>
+           
+        </header>
+        <main class="main">
+            <section class="content-header">
+                <div class="content__form-discover">
+                    <div class="form-discover__items">
+                        <div class="form-discover__inner">
+                            <div class="form-discover__item">
+                                <select name="location" class="form__select-location form-discover__select form__select">
+                                    <option value="where" selected>Where to?</option>
+                                    <option value="london">London</option>
+                                    <option value="london">London</option>
+                                    <option value="london">London</option>
+                                    <option value="london">London</option>
+                                </select>
+                            </div>
+                            <div class="form-discover__item form-date__item">
+                                <input type="date" name="Date" class="form__date" id="davaToday">
+                                <div class="form-date__body"><span>When</span></div>
+                            </div>
+                            <div class="form-discover__item">
+                                <select name="type" class="form__select-type form-discover__select form__select">
+                                    <option value="trabel type" selected>Travel type</option>
+                                    <option value="solo travel">Solo Travel</option>
+                                    <option value="Travel With Friends">Travel With Friends</option>
+                                    <option value="solo travel">Solo Travel</option>
+                                    <option value="Travel With Friends">Travel With Friends</option>
+                                    <option value="solo travel">Solo Travel</option>
+                                    <option value="Travel With Friends">Travel With Friends</option>
+                                </select>
+                            </div>
+                            <div class="form-discover__item form__item-btn">
+                                <button type="submit" class="form-discover__button btn"><span>Discover now</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__about about-content">
+                    <div class="about-content__container container">
+                        <div class="about-content__img">
+                            <img src="img/about-img.jpg" alt="">
+                        </div>
+                        <div class="about-content__text text-about">
+                            <div class="text-about__title">
+                                Learn More About Travello
+                            </div>
+                            <div class="text-about__desc">
+                                <p>For those who like traveling with friends or family, we offer group tours to Europe and Asia. You can either gather your own group up to 12 members or join one of the groups that we form for you and other tourists. Contact us for more details today!</p>
+                            </div>
+                            <div class="text-about__btn">
+                                <a href="">
+                                    <button class="btn">Plan My Trip</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="curated">
+                    <div class="container curated__header header-curated ">
+                        <div class="header-curated__text text-curated">
+                            <div class="text-curated__desc">
+                                <p>Place & Cities Must Visit This Summer</p>
+                            </div>
+                            <div class="text-curated__title title">
+                                <h2>Curated For You</h2>
+                            </div>
+                        </div>
+                        <div class="header-curated__btn">
+                             <a href="">
+                                <button class="btn">More Cureted for You</button>
+                            </a>                               
+                        </div>
+                    </div>
+                    <div class="curated__swiper">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide__img">
+                                        <img src="img/curated-slide/01.jpg" alt="">
+                                        <div class="swipe-hot-deals">
+                                            <div class="swipe-hot-deals__inner">
+                                                Book Now
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide__body body-slide">
+                                        <div class="body-slide__header header-slide">
+                                            <div class="header-slide__text text-slide">
+                                                <div class="text-slide__city">
+                                                    <a href="">Zanzibar</a>   
+                                                </div>
+                                                <div class="text-slide__place">
+                                                    Europe, Greece
+                                                </div>
+                                            </div>
+                                            <div class="header-slide__rating">
+                                                <div class="rating rating_set">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">5</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide__bottom bottom-slide">
+                                        <div class="bottom-slide__peopels">
+                                            <span>2</span>
+                                        </div>
+                                        <div class="bottom-slide__time">
+                                            <span>7 Days</span>
+                                        </div>
+                                        <div class="bottom-slide__price">
+                                            <span>2,550</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__img">
+                                        <img src="img/curated-slide/02.jpg" alt="">
+                                    </div>
+                                    <div class="slide__body body-slide">
+                                        <div class="body-slide__header header-slide">
+                                            <div class="header-slide__text text-slide">
+                                                <div class="text-slide__city">
+                                                    <a href="">Zanzibar</a>   
+                                                </div>
+                                                <div class="text-slide__place">
+                                                    Europe, Greece
+                                                </div>
+                                            </div>
+                                            <div class="header-slide__rating">
+                                                <div class="rating rating_set">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">5</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide__bottom bottom-slide">
+                                        <div class="bottom-slide__peopels">
+                                            <span>3</span>
+                                        </div>
+                                        <div class="bottom-slide__time">
+                                            <span>10 Days</span>
+                                        </div>
+                                        <div class="bottom-slide__price">
+                                            <span>550</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__img">
+                                        <img src="img/curated-slide/03.jpg" alt="">
+                                    </div>
+                                    <div class="slide__body body-slide">
+                                        <div class="body-slide__header header-slide">
+                                            <div class="header-slide__text text-slide">
+                                                <div class="text-slide__city">
+                                                    <a href="">Zanzibar</a>   
+                                                </div>
+                                                <div class="text-slide__place">
+                                                    Europe, Greece
+                                                </div>
+                                            </div>
+                                            <div class="header-slide__rating">
+                                                <div class="rating rating_set">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">4</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide__bottom bottom-slide">
+                                        <div class="bottom-slide__peopels">
+                                            <span>4</span>
+                                        </div>
+                                        <div class="bottom-slide__time">
+                                            <span>6 Days</span>
+                                        </div>
+                                        <div class="bottom-slide__price">
+                                            <span>10,550</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__img">
+                                        <img src="img/curated-slide/01.jpg" alt="">
+                                    </div>
+                                    <div class="slide__body body-slide">
+                                        <div class="body-slide__header header-slide">
+                                            <div class="header-slide__text text-slide">
+                                                <div class="text-slide__city">
+                                                    <a href="">Zanzibar</a>   
+                                                </div>
+                                                <div class="text-slide__place">
+                                                    Europe, Greece
+                                                </div>
+                                            </div>
+                                            <div class="header-slide__rating">
+                                                <div class="rating rating_set">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">5</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide__bottom bottom-slide">
+                                        <div class="bottom-slide__peopels">
+                                            <span>4</span>
+                                        </div>
+                                        <div class="bottom-slide__time">
+                                            <span>6 Days</span>
+                                        </div>
+                                        <div class="bottom-slide__price">
+                                            <span>10,550</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__img">
+                                        <img src="img/curated-slide/03.jpg" alt="">
+                                    </div>
+                                    <div class="slide__body body-slide">
+                                        <div class="body-slide__header header-slide">
+                                            <div class="header-slide__text text-slide">
+                                                <div class="text-slide__city">
+                                                    <a href="">Zanzibar</a>   
+                                                </div>
+                                                <div class="text-slide__place">
+                                                    Europe, Greece
+                                                </div>
+                                            </div>
+                                            <div class="header-slide__rating">
+                                                <div class="rating rating_set">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">3.5</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide__bottom bottom-slide">
+                                        <div class="bottom-slide__peopels">
+                                            <span>4</span>
+                                        </div>
+                                        <div class="bottom-slide__time">
+                                            <span>6 Days</span>
+                                        </div>
+                                        <div class="bottom-slide__price">
+                                            <span>10,550</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__img">
+                                        <img src="img/curated-slide/02.jpg" alt="">
+                                    </div>
+                                    <div class="slide__body body-slide">
+                                        <div class="body-slide__header header-slide">
+                                            <div class="header-slide__text text-slide">
+                                                <div class="text-slide__city">
+                                                    <a href="">Zanzibar</a>   
+                                                </div>
+                                                <div class="text-slide__place">
+                                                    Europe, Greece
+                                                </div>
+                                            </div>
+                                            <div class="header-slide__rating">
+                                                <div class="rating rating_set">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">4.5</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide__bottom bottom-slide">
+                                        <div class="bottom-slide__peopels">
+                                            <span>4</span>
+                                        </div>
+                                        <div class="bottom-slide__time">
+                                            <span>6 Days</span>
+                                        </div>
+                                        <div class="bottom-slide__price">
+                                            <span>10,550</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__img">
+                                        <img src="img/curated-slide/01.jpg" alt="">
+                                    </div>
+                                    <div class="slide__body body-slide">
+                                        <div class="body-slide__header header-slide">
+                                            <div class="header-slide__text text-slide">
+                                                <div class="text-slide__city">
+                                                    <a href="">Zanzibar</a>   
+                                                </div>
+                                                <div class="text-slide__place">
+                                                    Europe, Greece
+                                                </div>
+                                            </div>
+                                            <div class="header-slide__rating">
+                                                <div class="rating rating_set">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">5</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide__bottom bottom-slide">
+                                        <div class="bottom-slide__peopels">
+                                            <span>4</span>
+                                        </div>
+                                        <div class="bottom-slide__time">
+                                            <span>6 Days</span>
+                                        </div>
+                                        <div class="bottom-slide__price">
+                                            <span>10,550</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__img">
+                                        <img src="img/curated-slide/03.jpg" alt="">
+                                    </div>
+                                    <div class="slide__body body-slide">
+                                        <div class="body-slide__header header-slide">
+                                            <div class="header-slide__text text-slide">
+                                                <div class="text-slide__city">
+                                                    <a href="">Zanzibar</a>   
+                                                </div>
+                                                <div class="text-slide__place">
+                                                    Europe, Greece
+                                                </div>
+                                            </div>
+                                            <div class="header-slide__rating">
+                                                <div class="rating rating_set">
+                                                    <div class="rating__body">
+                                                        <div class="rating__active"></div>
+                                                        <div class="rating__items">
+                                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating__value">3.5</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide__bottom bottom-slide">
+                                        <div class="bottom-slide__peopels">
+                                            <span>4</span>
+                                        </div>
+                                        <div class="bottom-slide__time">
+                                            <span>6 Days</span>
+                                        </div>
+                                        <div class="bottom-slide__price">
+                                            <span>10,550</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+           </section>
+           <section class="content-bottom">
+               <div class="flesh-deals">
+                   <div class="flesh-deals__header header-flesh-deals">
+                       <div class="header-flesh-deals__container container">
+                            <div class="header-flesh-deals__title title">
+                                <h2>Flash Deals</h2>
+                            </div>
+                            <div class="header-flesh-deals__btn">
+                                <a href="">
+                                    <button class="btn">More Flash Deals</button>
+                                </a>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="flesh-deals__slick">
+                        <div class="flesh-deals__slider">
+                            <div class="flesh-deals__card card-flesh-deals">
+                                <div class="card-flesh-deals__img">
+                                    <img src="img/flesh-slider/01.jpg" alt="">
+                                </div>
+                                <div class="card-flesh-deals__body">
+                                    <div class="card-flesh-deals__inner">
+                                        <div class="card-flesh-deals__timer">
+                                            <div class="timer__inner">
+                                                <div class="timer__item" >
+                                                    <div class="hour-1"></div>
+                                                    <div>:</div>
+                                                </div>
+                                                <div class="timer__item">
+                                                    <div class="minutes-1"></div>
+                                                    <div>:</div>
+                                                </div>
+                                                <div class="timer__item">
+                                                    <div class="seconds-1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-flesh-deals__title">
+                                            <h3>Discover the Egypt in uncompromising Luxury</h3>
+                                        </div>
+                                        <div class="card-flesh-deals__about">
+                                            <p>Per Person, 3 Nights</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-flesh-deals__price">
+                                        <span class="price__card-flesh-deals">1,580</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flesh-deals__slider">
+                            <div class="flesh-deals__card card-flesh-deals">
+                                <div class="card-flesh-deals__img">
+                                    <img src="img/flesh-slider/02.jpg" alt="">
+                                </div>
+                                <div class="card-flesh-deals__body">
+                                    <div class="card-flesh-deals__inner">
+                                        <div class="card-flesh-deals__timer">
+                                            <div class="timer__inner">
+                                                <div class="timer__item" >
+                                                    <div class="hour"></div>
+                                                    <div>:</div>
+                                                </div>
+                                                <div class="timer__item">
+                                                    <div class="minutes"></div>
+                                                    <div>:</div>
+                                                </div>
+                                                <div class="timer__item">
+                                                    <div class="seconds"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-flesh-deals__title">
+                                            <h3>Discover the Egypt</h3>
+                                        </div>
+                                        <div class="card-flesh-deals__about">
+                                            <p>Per Person, 3 Nights</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-flesh-deals__price">
+                                        <span class="price__card-flesh-deals">580</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flesh-deals__slider">
+                            <div class="flesh-deals__card card-flesh-deals">
+                                <div class="card-flesh-deals__img">
+                                    <img src="img/flesh-slider/03.jpg" alt="">
+                                </div>
+                                <div class="card-flesh-deals__body">
+                                    <div class="card-flesh-deals__inner">
+                                        <div class="card-flesh-deals__timer">
+                                            <div class="timer__inner">
+                                                <div class="timer__item" >
+                                                    <div class="hour-2"></div>
+                                                    <div>:</div>
+                                                </div>
+                                                <div class="timer__item">
+                                                    <div class="minutes-2"></div>
+                                                    <div>:</div>
+                                                </div>
+                                                <div class="timer__item">
+                                                    <div class="seconds-2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-flesh-deals__title">
+                                            <h3>Discover the Egypt. Discover the Egypt. Discover the Egypt</h3>
+                                        </div>
+                                        <div class="card-flesh-deals__about">
+                                            <p>Per Person, 3 Nights</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-flesh-deals__price">
+                                        <span class="price__card-flesh-deals">10,580</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flesh-deals__slider">
+                            <div class="flesh-deals__card card-flesh-deals">
+                                <div class="card-flesh-deals__img">
+                                    <img src="img/flesh-slider/04.jpg" alt="">
+                                </div>
+                                <div class="card-flesh-deals__body">
+                                    <div class="card-flesh-deals__inner">
+                                        <div class="card-flesh-deals__timer">
+                                            <div class="timer__inner">
+                                                <div class="timer__item" >
+                                                    <div class="hour-3"></div>
+                                                    <div>:</div>
+                                                </div>
+                                                <div class="timer__item">
+                                                    <div class="minutes-3"></div>
+                                                    <div>:</div>
+                                                </div>
+                                                <div class="timer__item">
+                                                    <div class="seconds-3"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-flesh-deals__title">
+                                            <h3>Discover the Egypt. Discover the Egypt</h3>
+                                        </div>
+                                        <div class="card-flesh-deals__about">
+                                            <p>Per Person, 3 Nights</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-flesh-deals__price">
+                                        <span class="price__card-flesh-deals">6,580</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flesh-deals__slider">
+                            <div class="flesh-deals__card card-flesh-deals">
+                                <div class="card-flesh-deals__img">
+                                    <img src="img/flesh-slider/05.jpg" alt="">
+                                </div>
+                                <div class="card-flesh-deals__body">
+                                    <div class="card-flesh-deals__inner">
+                                        <div class="card-flesh-deals__timer">
+                                            <div class="timer__inner">
+                                                <div class="timer__item" >
+                                                    <div class="hour-4"></div>
+                                                    <div>:</div>
+                                                </div>
+                                                <div class="timer__item">
+                                                    <div class="minutes-4"></div>
+                                                    <div>:</div>
+                                                </div>
+                                                <div class="timer__item">
+                                                    <div class="seconds-4"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-flesh-deals__title">
+                                            <h3>Discover the Egypt. Discover the Egypt</h3>
+                                        </div>
+                                        <div class="card-flesh-deals__about">
+                                            <p>Per Person, 3 Nights</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-flesh-deals__price">
+                                        <span class="price__card-flesh-deals">6,580</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flesh-deals__slider">
+                            <div class="flesh-deals__card card-flesh-deals">
+                                <div class="card-flesh-deals__img">
+                                    <img src="img/flesh-slider/05.jpg" alt="">
+                                </div>
+                                <div class="card-flesh-deals__body">
+                                    <div class="card-flesh-deals__inner">
+                                        <div class="card-flesh-deals__timer">
+                                            <div class="timer__inner">
+                                                <div class="timer__item" >
+                                                    <div class="hour-5"></div>
+                                                    <div>:</div>
+                                                </div>
+                                                <div class="timer__item">
+                                                    <div class="minutes-5"></div>
+                                                    <div>:</div>
+                                                </div>
+                                                <div class="timer__item">
+                                                    <div class="seconds-5"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-flesh-deals__title">
+                                            <h3>Discover the Egypt. Discover the Egypt</h3>
+                                        </div>
+                                        <div class="card-flesh-deals__about">
+                                            <p>Per Person, 3 Nights</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-flesh-deals__price">
+                                        <span class="price__card-flesh-deals">6,580</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               <div class="sendform">
+                   <div class="sendform__container">
+                       <div class="sendform__about about-sendform">
+                            <div class="about-sendform__title">
+                                <h2>Feel free to drop a line</h2>
+                            </div>
+                            <div class="about-sendform__decs">
+                                <p>Upper Level, Overseas Passenger Terminal,</p>
+                                <p>The Rocks, Sydney 2000</p>
+                                <p>Tel: <a href="tel:62500800123">+62 500 800 123</a></p>
+                                <p>Email: <a href="mailto:testmail@yourdomain.com">testmail@yourdomain.com</a></p>
+                            </div>
+                       </div>
+                       <div class="sendform__form">
+                            <form action="#" id="form" class="form__body">
+                                <div class="form__item">
+                                    <label for="formName" class="form__label">First name</label>
+                                    <input id="formName" type="text" name="name" class="form__input _req">
+                                </div>
+                                <div class="form__item">
+                                    <label for="formEmail" class="form__label">E-mail</label>
+                                    <input id="formEmail" type="text" name="email" class="form__input _email _req">
+                                </div>
+                                <div class="form__item">
+                                    <label for="formSubject" class="form__label">Subject</label>
+                                    <input id="formSubject" type="text" name="name" class="form__input _req">
+                                </div>
+                                <div class="form__item">
+                                    <label for="formMessage" class="form__label">Your Message</label>
+                                    <textarea name="message" id="formMessage" class="form__input"></textarea>
+                                </div>
+                                <div class="form__item form__btn">
+                                    <button class="btn">Send</button>
+                                </div>
+                            </form>
+                       </div>
+                   </div>
+               </div>
+               <div class="brands">
+                   <div class="container brands__container">
+                       <div class="brands__items">
+                            <div class="brands__item">
+                               <img src="img/brands/01.png" alt="">
+                            </div>
+                            <div class="brands__item">
+                                <img src="img/brands/02.png" alt="">
+                            </div>
+                            <div class="brands__item">
+                                <img src="img/brands/03.png" alt="">
+                            </div>
+                            <div class="brands__item">
+                                <img src="img/brands/04.png" alt="">
+                            </div>
+                            <div class="brands__item">
+                                <img src="img/brands/01.png" alt="">
+                            </div>
+                            <div class="brands__item">
+                                <img src="img/brands/04.png" alt="">
+                            </div>
+                       </div>
+                   </div>
+               </div>
+           </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__container container">
+                    <div class="footer__header"></div>
+                    <div class="footer__body body-footer">
+                        <div class="body-footer__items">
+                            <div class="body-footer__item">
+                                <div class="body-footer__title">
+                                    <h5>Call us</h5>
+                                </div>
+                                <div class="body-footer__text">
+                                    <a href="tel:63453456233" class="body-footer__link">+6-345-3456-233</a>
+                                </div>
+                                <div class="body-footer__text">
+                                    <a href="mailto:travello@gmail.com">travello@gmail.com</a>
+                                </div>
+                                <div class="body-footer__social-media">
+                                    <div class="social-media__item">
+                                        <a href=""><img src="img/social-media/facebook.svg" alt=""></a>
+                                    </div>
+                                    <div class="social-media__item">
+                                        <a href=""><img src="img/social-media/twitter.svg" alt=""></a>
+                                    </div>
+                                    <div class="social-media__item">
+                                        <a href=""><img src="img/social-media/vimeo.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body-footer__item">
+                                <div class="body-footer__title">
+                                    <h5>Support</h5>
+                                </div>
+                                <div class="body-footer__text">
+                                    <a href="" class="body-footer__link">Customer Support</a>
+                                </div>
+                                <div class="body-footer__text">
+                                    <a href="" class="body-footer__link">Pricvacy Policy</a>
+                                </div>
+                                <div class="body-footer__text">
+                                    <a href="" class="body-footer__link">Contact Channels</a>
+                                </div>
+                            </div>
+                            <div class="body-footer__item">
+                                <div class="body-footer__title">
+                                    <h5>Pay Safely with us</h5>
+                                </div>
+                                <div class="body-footer__text">
+                                    <p>The payment encrypted and transmitted security with an SSL Protocol</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <p>© 2021 CREATIVE PEOPLE. ALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/select.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/flesh-swiper.js"></script>
+    <script src="js/send.js"></script>
+    <script>document.getElementById('davaToday').valueAsDate = new Date();</script>
+</body>
+</html>
